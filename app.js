@@ -2,7 +2,7 @@ alert(
   "Bem-vindo ao sorteio de números! Clique no botão para sortear um número entre 1 e 100.",
 );
 
-let numeroSecreto = 90;
+let numeroSecreto = parseInt(Math.random() * 100) + 1;
 console.log(`O número secreto é: ${numeroSecreto}`);
 let chute;
 let tentativas = 1;
