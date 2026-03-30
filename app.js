@@ -1,5 +1,11 @@
-let titulo = document.querySelector('h1');
-titulo.innerHTML = 'Sorteador de Números';
+function exibirTextoNaTela(tag, texto) {
+  let campo = document.querySelector(tag);
+  campo.innerHTML = texto;
+}
 
-let paragrafo = document.querySelector('p');
-paragrafo.innerHTML = 'Clique no botão para sortear um número entre 1 e 100.';
+exibirTextoNaTela('h1', 'Sorteador de Números');
+exibirTextoNaTela('p', 'Clique no botão para sortear um número entre 1 e 100.');
+
+function verificarChute() {
+    console.log("Botão clicado!");
+}
