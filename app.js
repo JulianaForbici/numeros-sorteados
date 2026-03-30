@@ -10,8 +10,18 @@ exibirTextoNaTela('p', 'Clique no botão para sortear um número entre 1 e 100.'
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
-    console.log(chute == numeroSorteado);
-    console.log(numeroSorteado);
+    if(chute == numeroSorteado) {
+        exibirTextoNaTela('h1', 'Parabéns!');
+        exibirTextoNaTela('p', 'Você acertou o número sorteado!');
+    } else {
+        if (chute < numeroSorteado) {
+            exibirTextoNaTela('h1', 'Tente novamente!');
+            exibirTextoNaTela('p', 'O número sorteado é maior do que o seu chute.');
+        } else {
+          exibirTextoNaTela('h1', 'Tente novamente!');
+          exibirTextoNaTela('p', 'O número sorteado é menor do que o seu chute.');
+        }
+    }
 }
 
 function gerarNumeroAleatorio() {
