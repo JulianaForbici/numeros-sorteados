@@ -5,6 +5,6 @@ let chute = prompt("Digite um número entre 1 e 100 para tentar adivinhar o núm
 
 if (numeroSecreto == chute) {
     alert("Parabéns! Você acertou o número secreto!");
-} else if (chute != numeroSecreto) {
+} else {
     alert("Que pena! Você errou o número secreto. O número correto era: " + numeroSecreto);
 }
