@@ -6,5 +6,9 @@ let chute = prompt("Digite um número entre 1 e 100 para tentar adivinhar o núm
 if (numeroSecreto == chute) {
     alert("Parabéns! Você acertou o número secreto!");
 } else {
-    alert(`Que pena! Você errou o número secreto. O número correto era ${numeroSecreto}`);
+    if (chute > numeroSecreto) {
+        alert(`O número secreto é menor que ${chute}`);
+    } else {
+        alert(`O número secreto é maior que ${chute}`);
+    }
 }
