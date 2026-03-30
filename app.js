@@ -13,7 +13,7 @@ while (chute != numeroSecreto) {
   );
 
   if (numeroSecreto == chute) {
-    alert(`Parabéns! Você acertou o número secreto em ${tentativas} tentativas!`);
+    break;
   } else {
     if (chute > numeroSecreto) {
       alert(`O número secreto é menor que ${chute}`);
@@ -22,4 +22,12 @@ while (chute != numeroSecreto) {
     }
     tentativas++;
   }
+}
+
+if (tentativas < 1) {
+  alert(`Parabéns! Você acertou o número secreto em ${tentativas} tentativas!`);
+} else if (tentativas === 1) {
+  alert(`Parabéns! Você acertou o número secreto em ${tentativas} tentativa!`);
+} else {
+  alert(`Parabéns! Você acertou o número secreto em ${tentativas} tentativas!`);
 }
